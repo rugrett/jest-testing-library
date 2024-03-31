@@ -44,5 +44,5 @@
 - [verbose](https://jestjs.io/docs/cli#--verbose): в моменте запуска показывает больше информации, если что-то идёт не по плану.
 
 ```typescript
-function toBe<T>(equel: T, res: T) { equal === res }  //  equal ===
+function toBe<T>(equel: T, res: T) { equal === res }  //  equal === примитив
 ``` 
