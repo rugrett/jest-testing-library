@@ -1,4 +1,4 @@
-import {multiply, divide, sum} from "./math";
+import {multiply, divide, sum} from "../math";
 
 const DIVIDE_ARRAY = [
   { input_first: 6, input_second: 3, expected: 2 },

@@ -1,0 +1,1 @@
+export const mockTodo = { id: 1, title: "todo 1", competed: false };

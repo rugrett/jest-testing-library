@@ -1,4 +1,4 @@
-import { len, toLower, toUpper } from "./strings";
+import { len, toLower, toUpper } from "../strings";
 
 const LEN_ARRAY = [
   { str: 'Наша машина, была самой красивой', expected: 32 },
