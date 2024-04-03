@@ -42,6 +42,22 @@ describe('Создание дела', () => {
     
     await expect(createTodoOnServer('my todo')).rejects.toMatch('Network Error');
   })
+
+  it('Выбрасываем ошибку когда нет Загловока', (done) => {
+    try {
+      createTodo("")
+      done("Ещё не дописали нашу реализацию!")
+    }catch (error) {
+      expect(error.message).toBe("Заголовок не может быть пустым")
+      done()
+    }
+  })
+  
+  it('Выбрасываем ошибку когда нет Загловока v2', () => {
+    const fnToThrow = () => createTodo();
+    
+    expect(fnToThrow).toThrow("Заголовок не может быть пустым");
+  })
   
   it('Возврат ошибки из самой функции', async () => {
     fetch.mockResolvedValueOnce({ ok: false });

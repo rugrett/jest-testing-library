@@ -1,6 +1,10 @@
 import { v4 } from "uuid";
 
 export function createTodo(title) {
+  if(!title) {
+    throw new Error("Заголовок не может быть пустым")
+  }
+  
   return {
     title,
     completed: false,
